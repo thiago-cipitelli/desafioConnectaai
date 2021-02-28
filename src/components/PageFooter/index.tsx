@@ -32,7 +32,6 @@ function PageFooter(){
                                     <label htmlFor="email">E-MAIL</label>
                                     <input type="email" id="email" placeholder="email@email.com.br"/>
                                 </div>
-                                
                             </div>
                             <div className="input-block">
                                 <label htmlFor="bubject">ASSUNTO</label>

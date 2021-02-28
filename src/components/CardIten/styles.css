@@ -34,6 +34,9 @@
     width: 100%;
 }
 @media only screen and (max-width: 735px){
+    .card-iten{
+        margin: 6rem 2rem;
+    }
     .card-button{
         left: 0;
     }
@@ -42,7 +45,8 @@
 @media only screen and (max-width: 375px){
     .card-iten{
         margin: 0;
+        margin-left: 2rem;
         margin-bottom: 3rem;
-        width: 100%;
+        width: 90%;
     }
 }

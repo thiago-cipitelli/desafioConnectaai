@@ -37,7 +37,8 @@ function Landing(){
                     </div>
                     <img id ="lata1" src={lata} alt=""/>
                     <img id ="lata2" src={lata} alt=""/>
-                    <img id ="lata3" src={lata} alt=""/>
+                    <div className="teste"><img id ="lata3" src={lata} alt=""/></div>
+                    
                 </div>
             </div>
             <div><PageFooter/></div>
