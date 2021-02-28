@@ -1,0 +1,48 @@
+.card-iten{
+    position: relative;
+    margin: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    width: 360px;
+    height: 484px;
+    
+}
+
+.card-iten img{
+    align-self: center;
+    height: 65%;
+    width: 65%;
+    
+}
+
+.titulo-iten{
+    font-family: Artigo;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+      
+}
+
+.card-button{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+@media only screen and (max-width: 735px){
+    .card-button{
+        left: 0;
+    }
+    
+}
+@media only screen and (max-width: 375px){
+    .card-iten{
+        margin: 0;
+        margin-bottom: 3rem;
+        width: 100%;
+    }
+}

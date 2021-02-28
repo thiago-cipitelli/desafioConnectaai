@@ -1,0 +1,234 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: var(--color-primary);
+    color: #ffffff;
+    height: 100vh;
+    width: 100vw;
+}
+
+.titulo-footer{
+    font: 700 40px Artigo;
+    margin-bottom: 1rem;
+}
+.fale-conosco a{
+    margin-right: 1.5rem;
+}
+
+.footer-container{
+    width: 100vw;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 8rem;
+    height: 80vh;
+}
+
+
+#contact-form{
+   position: relative;
+}
+
+.input-block{
+    margin-top: 2rem;
+}
+
+#contact-form .input-block label{
+    display: block;
+    margin-bottom: 1rem;
+    opacity: 0.5;
+}
+
+#contact-form .input-block input{
+    width: 100%;
+    height: 46px;
+    background-color: #1B1F1C;
+    box-shadow: 1px -1px #ffffff;
+    border: none;
+    outline: none;
+    color: #ffffff;
+}
+
+#contact-form .input-block-tel input{
+    width: 100%;
+    height: 46px;
+    background-color: #1B1F1C;
+    box-shadow: 1px -1px #ffffff;
+    border: none;
+    outline: none;
+    color: #ffffff;
+}
+#contact-form .input-block-tel label{
+    display: block;
+    margin-bottom: 1rem;
+    opacity: 0.5;
+}
+
+#contact-form .input-block-email input{
+    width: 100%;
+    margin-left: 2rem;
+    height: 46px;
+    background-color: #1B1F1C;
+    box-shadow: 1px -1px #ffffff;
+    border: none;
+    outline: none;
+    color: #ffffff;
+}
+#contact-form .input-block-email label{
+    display: block;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    opacity: 0.5;
+}
+
+#contact-form .input-block textarea{
+    padding-top: 1rem;
+    width: 100%;
+    height: 131px;
+    background-color: #1B1F1C;
+    box-shadow: 1px -1px #ffffff;
+    border: none;
+    outline: none;
+    color: #ffffff;
+}
+
+
+#contact-form .input-block-name input{
+    width: 100%;
+    height: 46px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 1px -1px var(--color-secundary);
+    border: none;
+    outline: none;
+    opacity: 1;
+    color: #ffffff;
+}
+
+#contact-form .input-block-name label{
+    display: block;
+    color: var(--color-secundary);
+    margin-bottom: 1rem;
+}
+
+#name::placeholder{
+    padding-left: 1rem;
+}
+
+.fale-conosco{
+    margin-top: 10%;
+    padding: 5rem;
+    margin-left: 0;
+}
+
+.formulario{
+    position: relative;
+    margin-top: 5%;
+    margin-right: 5%;
+    width: 30vw;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    
+}
+
+
+.double-field{
+    position: relative;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: stretch;
+    
+}
+
+.rodape{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 15%;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+}
+.rodape h5{
+    opacity: 0.3;
+}
+.proj-logo{
+    display: flex;
+}
+
+.proj-logo img{
+    margin-top: -8%;
+}
+
+#submit{
+    font: 400 1.4rem Roboto;
+    background-color: var(--color-secundary);
+    text-align: center;
+    border-radius: 3rem;
+    border: none;
+    margin: .8rem;
+    padding: 2rem 6rem;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 3rem;
+    float: right;
+}
+@media screen and (max-width: 735px){
+    .footer-content{
+        flex-direction: column;
+    }
+    .formulario{
+        width: 80vw;
+        margin-top: 0;
+        margin-left: 10%;
+    }
+    .double-field{
+        display: block;
+    }
+    #contact-form .input-block-email input{
+        margin-left: 0;
+    }
+    #contact-form .input-block-email label{
+        margin-left: 0;
+    }
+    #submit{
+        width: 100%;
+    }
+    .fale-conosco{
+        margin-left: 28%;
+        margin-top: 0;
+    }
+    .titulo-footer{
+        font-size: 32px;
+    }
+    .rodape{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3%;
+    }
+    .proj-logo{
+        margin-top: 2%;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .titulo-footer{
+        font-size: 32px;
+    }
+    .fale-conosco{
+        margin-left: 10% !important;
+    }
+    #submit{
+        display: none !important;
+    }
+}

@@ -1,0 +1,191 @@
+#page-landing{
+    width: 100vw;
+    height: 100vh;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 7%;
+}
+.prod{
+    text-align: center;
+    font-family: artigo, serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 31px;
+    color: #101213;
+    box-sizing: border-box;
+}
+
+.titulo-final .prod{
+    margin-bottom: 6rem;
+}
+
+.card-slot{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+
+.images{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+.first{
+    height: 800px;
+    width: 566px;
+    position: relative;
+    background: url('../../assets/images/michael-discenza.svg');
+}
+
+.aux{
+    display: flex;
+    flex-direction: column;
+}
+.second{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: url('../../assets/images/ash-edmonds.svg');
+    width: 570px;
+    height: 50%;
+}
+
+.overlay{
+    width:100%;
+    height:100%;
+    position:absolute;
+    background-color:#000;
+    opacity:0.5;
+    
+}
+
+.image-title{
+    top: 50%;
+    font: 700 3.3rem Artigo;
+    text-align: center;
+    position: absolute;
+    color: #ffffff;
+    
+}
+
+.slide{
+    height: 50%;
+    background-color: var(--color-primary);
+    text-align: left;
+    width: 571px;
+    color: #ffffff;
+}
+
+.slide p{
+    font: 400 2rem Artigo;
+    width: 50%;
+    margin-left: 20%;
+    margin-top: 20%;
+}
+
+.experimente{
+    position: relative;
+    background-color: var(--color-secundary);
+    height: 35vh;
+}
+.titulo-final{
+    margin-top: 10rem;
+}
+#lata1,
+#lata2,
+#lata3{
+    position: absolute;
+}
+#lata1{
+    width: 100px;
+    top: -15%;
+    left: 15%;
+    filter: blur(4px);
+    transform: rotate(15deg);
+}
+#lata2{
+    width: 195px;
+    transform: rotate(-15deg);
+    left: 20%;
+    top: 20%;
+}
+#lata3{
+    width: 286px;
+    transform: rotate(15deg);
+    top: -23%;
+    right: 20%;
+}
+
+@media only screen and (max-width: 735px){
+    .images{
+        width: 100vw;
+    }
+    .slide{
+        width: 100%;
+    }
+    .second{
+        width: 100%;
+    }
+    #lata1{
+        width: 92px;
+        left: 5%;
+    }
+    #lata2{
+        width: 178px;
+        left: 10%;
+    }
+    #lata3{
+        width: 273px;
+        right: 0;
+    }
+}
+@media only screen and (max-width: 375px){
+    .card-slot{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 5%;
+    }
+    .images{
+        flex-direction: column;
+    }
+    .slide{
+        width: 100%;
+    }
+    .first{
+        width: 100%;
+    }
+    .second{
+        width: 100%;
+    }
+    .experimente{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        height: 45vh;
+    }
+    
+    #lata1{
+        position: relative;
+        width: 150px;
+        top: 10%;
+        left: auto;
+        transform: none;
+        filter: none;
+    }
+    #lata2,
+    #lata3{
+        display: none;
+    }
+}
